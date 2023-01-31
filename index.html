@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- sprite -->
+    <svg style="display: none">
+      <symbol id="star" viewBox="0 0 25 23">
+        <path
+          d="M11.5489 0.927054C11.8483 0.00574327 13.1517 0.00573969 13.4511 0.92705L15.5309 7.32827C15.6648 7.74029 16.0488 8.01925 16.482 8.01925L23.2126 8.01925C24.1814 8.01925 24.5841 9.25887 23.8004 9.82827L18.3552 13.7844C18.0047 14.0391 17.8581 14.4905 17.9919 14.9025L20.0718 21.3037C20.3712 22.225 19.3167 22.9911 18.533 22.4217L13.0878 18.4656C12.7373 18.2109 12.2627 18.2109 11.9122 18.4656L6.46701 22.4217C5.6833 22.9911 4.62882 22.225 4.92817 21.3037L7.00805 14.9025C7.14193 14.4905 6.99527 14.0391 6.64478 13.7844L1.19958 9.82827C0.415862 9.25887 0.81864 8.01925 1.78736 8.01925L8.51801 8.01925C8.95123 8.01925 9.33519 7.74029 9.46906 7.32827L11.5489 0.927054Z"
+          fill="#E5C45B"
+        />
+        <path
+          d="M11.5489 0.927054C11.8483 0.00574327 13.1517 0.00573969 13.4511 0.92705L15.5309 7.32827C15.6648 7.74029 16.0488 8.01925 16.482 8.01925L23.2126 8.01925C24.1814 8.01925 24.5841 9.25887 23.8004 9.82827L18.3552 13.7844C18.0047 14.0391 17.8581 14.4905 17.9919 14.9025L20.0718 21.3037C20.3712 22.225 19.3167 22.9911 18.533 22.4217L13.0878 18.4656C12.7373 18.2109 12.2627 18.2109 11.9122 18.4656L6.46701 22.4217C5.6833 22.9911 4.62882 22.225 4.92817 21.3037L7.00805 14.9025C7.14193 14.4905 6.99527 14.0391 6.64478 13.7844L1.19958 9.82827C0.415862 9.25887 0.81864 8.01925 1.78736 8.01925L8.51801 8.01925C8.95123 8.01925 9.33519 7.74029 9.46906 7.32827L11.5489 0.927054Z"
+          fill="#DDDDDD"
+        />
+        <path
+          d="M12.0245 1.08156C12.1741 0.620903 12.8259 0.620908 12.9755 1.08156L15.0554 7.48278C15.2562 8.10081 15.8322 8.51925 16.482 8.51925L23.2126 8.51925C23.697 8.51925 23.8984 9.13906 23.5065 9.42376L18.0613 13.3799C17.5356 13.7619 17.3156 14.439 17.5164 15.057L19.5963 21.4582C19.746 21.9189 19.2187 22.3019 18.8269 22.0172L13.3817 18.061C12.8559 17.6791 12.1441 17.6791 11.6183 18.0611L6.17312 22.0172C5.78126 22.3019 5.25402 21.9189 5.4037 21.4582L7.48358 15.057C7.68439 14.4389 7.46441 13.7619 6.93867 13.3799L1.49347 9.42376C1.10162 9.13906 1.303 8.51925 1.78736 8.51925L8.51801 8.51925C9.16784 8.51925 9.74378 8.10081 9.94459 7.48278L12.0245 1.08156Z"
+          stroke="black"
+          stroke-opacity="0.07"
+        />
+      </symbol>
+    </svg>
+    <div class="container">
+      <section class="benefits">
+        <div class="container">
+          <div class="benefits__inner">
+            <div class="benefits__item-inner">
+              <div class="benefits__item bg-milk">
+                <div class="benefits__content">
+                  <div class="benefits__title title">Кольца с бриллиантами</div>
+                  <div class="benefits__text">
+                    Отвечаем на вопросы покупателей в течение 10 минут
+                  </div>
+                </div>
+                <img
+                  src="src/img/benefits/crown.png"
+                  alt="Корона"
+                  class="benefits__img"
+                />
+
+                <img
+                  src="src/img/benefits/crown.png"
+                  alt="Корона"
+                  class="benefits__img-hidden"
+                />
+              </div>
+            </div>
+
+            <div class="benefits__item-inner">
+              <div class="benefits__item bg-gray">
+                <div class="benefits__content">
+                  <div class="benefits__title title">
+                    Кроссовки в стиле ретро
+                  </div>
+                  <div class="benefits__text">
+                    Отвечаем на вопросы покупателей в течение 10 минут
+                  </div>
+                  <div class="benefits__tags tags">
+                    <div class="tags__item">Apple</div>
+                    <div class="tags__item">Samsung</div>
+                  </div>
+                </div>
+                <img
+                  src="src/img/benefits/sneakers.png"
+                  alt="Кроссовки"
+                  class="benefits__img"
+                />
+                <img
+                  src="src/img/benefits/sneakers.png"
+                  alt="Корона"
+                  class="benefits__img-hidden"
+                />
+              </div>
+            </div>
+
+            <div class="benefits__item-inner">
+              <div class="benefits__item bg-pink">
+                <div class="benefits__content">
+                  <div class="benefits__title title">Краска для волос</div>
+
+                  <div class="benefits__tags tags">
+                    <div class="tags__item">Apple</div>
+                    <div class="tags__item">Samsung</div>
+                    <div class="tags__item">Xiaomi</div>
+                  </div>
+                </div>
+                <img
+                  src="src/img/benefits/girl.png"
+                  alt="Девушка"
+                  class="benefits__img"
+                />
+                <img
+                  src="src/img/benefits/girl.png"
+                  alt="Корона"
+                  class="benefits__img-hidden"
+                />
+              </div>
+            </div>
+
+            <div class="benefits__item-inner">
+              <div class="benefits__item bg-green">
+                <div class="benefits__content">
+                  <div class="benefits__title title">Беспроводные колонки</div>
+                  <div class="benefits__text">
+                    Отвечаем на вопросы покупателей в течение 10 минут
+                  </div>
+                  <div class="benefits__tags tags">
+                    <div class="tags__item">Honor</div>
+                  </div>
+                </div>
+
+                <img
+                  src="src/img/benefits/column.png"
+                  alt="Колонка"
+                  class="benefits__img"
+                />
+                <img
+                  src="src/img/benefits/column.png"
+                  alt="Корона"
+                  class="benefits__img-hidden"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slider-product">
+        <div class="container">
+          <div class="slider-product__inner">
+            <div class="slider-product__item-inner">
+              <div class="slider-product__item-block item-block">
+                <div class="item-block__content">
+                  <div class="item-block__stickers stickers">
+                    <span class="sticker sticker__product-day">Товар дня</span>
+                    <span class="sticker sticker__discount"> -5%</span>
+                    <span class="sticker sticker__bonus"> +58</span>
+                    <span class="sticker countdown">
+                      <span class="countdown__item countdown-img"></span>
+                      <span class="countdown__item">20ч :</span>
+                      <span class="countdown__item">15м :</span>
+                      <span class="countdown__item">37с</span>
+                    </span>
+                  </div>
+
+                  <div class="item-block__price-block">
+                    <span class="item-block__price">37 000 ₽</span>
+                    <span class="item-block__old-price"><s>40 000 ₽</s></span>
+                  </div>
+
+                  <div class="item-block__product_name">
+                    Мобильный телефон Samsung Galaxy Note 10 Lite 128GB (черный)
+                  </div>
+
+                  <div class="item-block__info">
+                    <div class="item-block__raiting raiting">
+                      <div class="raiting_star">
+                        <a href="#" class="raiting__link">
+                          <svg class="raiting__star-icon">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="raiting_value">4.6</div>
+                    </div>
+                    <div class="item-block__status status">В наличии</div>
+                  </div>
+
+                  <div class="item-block__buttons">
+                    <span class="item-block__button-basket button-basket">
+                      В корзину
+                    </span>
+                    <div class="item-block__button-favorites button-favorites">
+                      <svg class="icon-favorite">
+                        <use
+                          xlink:href="src/img/slider-product/icons/item_icons.svg#favorite-18-16"
+                        ></use>
+                      </svg>
+                    </div>
+                    <div
+                      class="item-block__button-comparison button-comparison"
+                    >
+                      <svg class="icon-comparsion">
+                        <use
+                          xlink:href="src/img/slider-product/icons/item_icons.svg#compare-20-16"
+                        ></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-block__image-block">
+                  <img
+                    src="src/img/slider-product/notebook.png"
+                    alt=""
+                    class="item-block__image-block-img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="slider-product__item-inner">
+              <div class="slider-product__item-block item-block">
+                <div class="item-block__content">
+                  <div class="item-block__stickers stickers">
+                    <span class="sticker sticker__product-day">Товар дня</span>
+                    <span class="sticker sticker__discount"> -5%</span>
+                    <span class="sticker sticker__bonus"> +58</span>
+                    <span class="sticker countdown">
+                      <span class="countdown__item countdown-img"></span>
+                      <span class="countdown__item">20ч :</span>
+                      <span class="countdown__item">15м :</span>
+                      <span class="countdown__item">37с</span>
+                    </span>
+                  </div>
+
+                  <div class="item-block__price-block">
+                    <span class="item-block__price">82 000 ₽</span>
+                    <span class="item-block__old-price"><s>93 300 ₽</s></span>
+                  </div>
+
+                  <div class="item-block__product_name">
+                    Мобильный телефон Samsung Galaxy Note
+                  </div>
+
+                  <div class="item-block__info">
+                    <div class="item-block__raiting raiting">
+                      <div class="raiting_star">
+                        <a href="#" class="raiting__link">
+                          <svg class="raiting__star-icon">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="raiting_value">4.6</div>
+                    </div>
+                    <div class="item-block__status status">В наличии</div>
+                  </div>
+
+                  <div class="item-block__buttons">
+                    <span class="item-block__button-basket button-basket">
+                      В корзину
+                    </span>
+                    <div class="item-block__button-favorites button-favorites">
+                      <svg class="icon-favorite">
+                        <use
+                          xlink:href="src/img/slider-product/icons/item_icons.svg#favorite-18-16"
+                        ></use>
+                      </svg>
+                    </div>
+                    <div
+                      class="item-block__button-comparison button-comparison"
+                    >
+                      <svg class="icon-comparsion">
+                        <use
+                          xlink:href="src/img/slider-product/icons/item_icons.svg#compare-20-16"
+                        ></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-block__image-block">
+                  <img
+                    src="src/img/slider-product/column.png"
+                    alt=""
+                    class="item-block__image-block-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card-product">
+        <div class="container">
+          <div class="card-product__inner">
+            <div class="card-product__wrapper">
+              <div class="card-product__item bg-milk">
+                <img
+                  src="src/img/card-product/crown.png"
+                  alt="Корона"
+                  class="card-product__img"
+                />
+                <div class="card-product__conent">
+                  <div class="card-product__title-item title">
+                    Кольца с бриллиантами
+                  </div>
+                  <div class="card-product__text-item">
+                    Отвечаем на вопросы покупателей в течение 10 минут
+                  </div>
+                  <div class="benefits__tags tags">
+                    <div class="tags__item">Apple</div>
+                    <div class="tags__item">Samsung</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-product__wrapper">
+              <div class="card-product__item bg-gray">
+                <img
+                  src="src/img/card-product/sneakers.png"
+                  alt="Корона"
+                  class="card-product__img"
+                />
+                <div class="card-product__conent">
+                  <div class="card-product__title-item title">
+                    Кроссовки в стиле ретро по отличным ценам
+                  </div>
+                  <div class="benefits__tags tags">
+                    <div class="tags__item">Подробности</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-product__wrapper">
+              <div class="card-product__item bg-pink">
+                <img
+                  src="src/img/card-product/girl.png"
+                  alt="Корона"
+                  class="card-product__img"
+                />
+                <div class="card-product__conent">
+                  <div class="card-product__title-item title">
+                    Краска для волос
+                  </div>
+                  <div class="card-product__text-item">
+                    Отвечаем на вопросы покупателей в течение 10 минут
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-product__wrapper">
+              <div class="card-product__item bg-green">
+                <img
+                  src="src/img/card-product/column.png"
+                  alt="Корона"
+                  class="card-product__img"
+                />
+                <div class="card-product__conent">
+                  <div class="card-product__title-item title">
+                    Беспроводные колонки
+                  </div>
+                  <div class="card-product__text-item">
+                    Отвечаем на вопросы покупателей в течение 10 минут
+                  </div>
+                  <div class="benefits__tags tags">
+                    <div class="tags__item">Apple</div>
+                    <div class="tags__item">Samsung</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="widget">
+        <div class="container">
+          <div class="widget__title-block title-block">Rutube</div>
+          <div class="widget__inner">
+            <div class="widget__inner-item">
+              <div class="widget__wrapper-item">
+                <img
+                  src="src/img/widget/img/wg1.png"
+                  alt=""
+                  class="widget__img"
+                />
+                <div class="widget__title">
+                  Лучшие сайты марта в #poweredbyaspro 🔥 Вновь чествуем
+                  победителей в движении
+                </div>
+                <div class="widget__date">12.02.2022</div>
+              </div>
+            </div>
+            <div class="widget__inner-item">
+              <div class="widget__wrapper-item">
+                <img
+                  src="src/img/widget/img/wg2.png"
+                  alt=""
+                  class="widget__img"
+                />
+                <div class="widget__title">
+                  Сердцем к сердцу, маркетинг к маркетингу. Calltouch проводят
+                  онлайн-конференцию Callday.Medicine
+                </div>
+                <div class="widget__date">12.02.2022</div>
+              </div>
+            </div>
+            <div class="widget__inner-item">
+              <div class="widget__wrapper-item">
+                <img
+                  src="src/img/widget/img/wg3.png"
+                  alt=""
+                  class="widget__img"
+                />
+                <div class="widget__title">
+                  Новые отраслевые решения! Аспро: Инжиниринг & Аспро: Детский
+                  сад и образовательный центр
+                </div>
+                <div class="widget__date">12.02.2022</div>
+              </div>
+            </div>
+            <div class="widget__inner-item">
+              <div class="widget__wrapper-item">
+                <img
+                  src="src/img/widget/img/wg4.png"
+                  alt=""
+                  class="widget__img"
+                />
+                <div class="widget__title">
+                  Почему выбирают готовое решение? Готовое решение — это сайт,
+                  который не нужно проектировать.
+                </div>
+                <div class="widget__date">12.02.2022</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
