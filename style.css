@@ -669,9 +669,21 @@ body {
 }
 
 @media(max-width:545px) {
-    .sticker__bonus {
-        display: table;
-        margin-top: 10px;
+
+    .benefits {
+        margin-bottom: 20px;
+    }
+
+    .slider-product {
+        margin-bottom: 20px;
+    }
+
+    .benefits__item {
+        width: 100%;
+    }
+
+    .benefits__text {
+        font-size: 14px;
     }
 
     .item-block {
@@ -679,8 +691,16 @@ body {
         padding-right: 10px;
     }
 
+    .item-block__content {
+        order: 2;
+    }
+
     .item-block__stickers {
         margin-bottom: 20px;
+    }
+
+    .sticker__bonus {
+        display: inline;
     }
 
     .card-product__item {
@@ -699,6 +719,7 @@ body {
         font-size: 12px;
         line-height: 12px;
     }
+
 }
 
 @media(max-width:380px) {
